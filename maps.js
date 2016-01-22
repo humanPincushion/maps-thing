@@ -22,7 +22,7 @@ function init() {
 }
 
 /**
- * marker class, used to create new instances of markers
+ * pin class, used to create new instances of markers
  * @param {Object} position the initial lat-long value for the marker.
  */
 function Pin(position) {
@@ -68,7 +68,6 @@ function Pin(position) {
   /**
    * update the location and radius information in the upper right of the window
    * as an example of the data that is available when a pin is moved.
-   * @return {[type]} [description]
    */
   function updateMeta() {
     var latlng = pin.getPosition();     // returns a latlong object.
