@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Google Maps technical proof of concept</title>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <link href="./maps.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+    <div id="map"></div>
+    <div id="meta">
+      <p>last pin movement</p>
+      <em>lat-long:</em> <span id="latlng"></span><br>
+      <em>radius:</em> <span id="radius"></span><br>
+      <em>address:</em> <span id="address"></span>
+      <button id="addPin">add pin</button>
+    </div>
+    <script src="./maps.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCQ5ofTUVefRABOkCR8J2_68n-JI2FlPTY&signed_in=true&callback=init"></script>
+  </body>
+</html>

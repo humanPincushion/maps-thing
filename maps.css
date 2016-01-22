@@ -1,0 +1,32 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+}
+#map {
+  height: 100%;
+}
+#meta {
+  padding: 30px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 550px;
+  background: white;
+}
+#meta p {
+  margin-top: 0;
+  font-weight: bold;
+}
+#meta span {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+}
+#meta button {
+  display: block;
+  margin-top: 10px;
+  width: 100%;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+}
