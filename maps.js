@@ -1,13 +1,13 @@
 var map,
     pins = [],  // a cache for the pins on the map, globally accessible.
-    melbLatLng = {lat: -37.814, lng: 144.963},  // melbourne cbd
+    MELBOURNE = {lat: -37.814, lng: 144.963},  // melbourne cbd
     PIN_DELAY = 1000;   // how long to wait before dropping the initial pins.
 
 function init() {
   // create the map instance and cache it globally.
   map = new google.maps.Map(document.getElementById('map'), {
     zoom: 13,
-    center: melbLatLng,
+    center: MELBOURNE,
     streetViewControl: false,
     disableDoubleClickZoom: true
   });
@@ -116,3 +116,6 @@ document.getElementById('addPin').addEventListener('click', function(event) {
 	event.preventDefault();
   addPin();
 });
+
+// init
+google.maps.event.addDomListener(window, 'load', init);
